@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Apache-AxKit-Plugin-QueryStringCacheRegexp.t
+lib/Apache/AxKit/Plugin/QueryStringCacheRegexp.pm
