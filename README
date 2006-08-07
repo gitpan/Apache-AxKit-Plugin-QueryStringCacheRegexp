@@ -1,18 +1,27 @@
-Apache-AxKit-Plugin-QueryStringCacheRegexp version 0.03
+qApache-AxKit-Plugin-QueryStringCacheRegexp version 0.04
 =======================================================
 DESCRIPTION
 
-This Module is a replacement for Apache::AxKit::Plugin::QueryStringCache.
+This module is a replacement for Apache::AxKit::Plugin::QueryStringCache.
 It offers the following at the expense of a little overhead:
 
 The querystring is "taken apart", the parameters are matched against a
 positive (*use*) and a negative (*ignore*) pattern, both to be specified
-from within httpd.conf. A changed order of parameters, old ("&") vs.
-new-style (";") delimiters or multiple occurances of the same parameter
-will not force AxKit to retransform a document.
+in httpd.conf. A changed order of parameters, old ("&") vs. new-style
+(";") delimiters or multiple occurances of the same parameter will not
+force AxKit to retransform a document.
 
 Parameters taken into account will have to match the *use*-pattern *and
 not* match the *ignore*-pattern (if given).
+
+CHANGES
+
+0.03 - initial release
+
+0.04 - handle multiple-valued CGI-Parameters
+     - use 'our', Perl >= 5.6.0 required.
+     - cleanup Makefile.PL
+     - added pod.t
 
 INSTALLATION
 
@@ -27,7 +36,7 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-   AxKit
+   AxKit >= 1.60
 
 BUGS
 
@@ -35,8 +44,8 @@ This is the first release.
  
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2004 by Hansjoerg Pehofer
+Copyright (C) 2004-2006 by Hansjoerg Pehofer
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.4 or,
+it under the same terms as Perl itself, either Perl version 5.8.7 or,
 at your option, any later version of Perl 5 you may have available.

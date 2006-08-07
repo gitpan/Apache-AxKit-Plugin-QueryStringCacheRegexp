@@ -1,3 +1,4 @@
+# $Id: Apache-AxKit-Plugin-QueryStringCacheRegexp.t,v 1.3 2006/01/02 14:24:50 c10232 Exp $ -*-perl-*-
 # Before `make install' is performed this script should be runnable with
 # `make test'. After `make install' it should work as `perl Apache-AxKit-Plugin-QueryStringCacheRegexp.t'
 

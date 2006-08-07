@@ -3,4 +3,6 @@ Makefile.PL
 MANIFEST
 README
 t/Apache-AxKit-Plugin-QueryStringCacheRegexp.t
+t/pod.t
 lib/Apache/AxKit/Plugin/QueryStringCacheRegexp.pm
+META.yml
